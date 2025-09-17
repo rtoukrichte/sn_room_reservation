@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1829144_room.employee" name="x_1829144_room.employee">6eed276e837b6a10d83fb2dfeeaad31e</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-08 18:31:00</sys_created_on>
+        <sys_id>d13eafae837b6a10d83fb2dfeeaad31b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>6eed276e837b6a10d83fb2dfeeaad31e</sys_name>
+        <sys_package display_value="Room Reservation" source="x_1829144_room">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_scope>
+        <sys_update_name>sys_embedded_help_role_d13eafae837b6a10d83fb2dfeeaad31b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-08 18:31:00</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

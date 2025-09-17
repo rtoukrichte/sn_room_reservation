@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions/>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+    if (g_user.hasRole('x_1829144_room.employee')) {
+        g_form.setReadOnly('status', true);
+		g_form.setReadOnly('manager', true);
+    } else {
+        g_form.setReadOnly('status', false);
+		g_form.setReadOnly('manager', false);
+    }
+}]]></script_true>
+        <set_values/>
+        <short_description>Make fields read only for Employee Role</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-09 16:26:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>44fa100383b3ea10d83fb2dfeeaad3f2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Make fields read only for Employee Role</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Room Reservation" source="x_1829144_room">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_scope>
+        <sys_update_name>sys_ui_policy_44fa100383b3ea10d83fb2dfeeaad3f2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-09 17:26:24</sys_updated_on>
+        <table>x_1829144_room_reservation</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

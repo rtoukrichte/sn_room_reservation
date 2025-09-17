@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ldap_server_config">
+    <ldap_server_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <attributes/>
+        <authenticate>true</authenticate>
+        <connect_timeout>10</connect_timeout>
+        <dn>cn=read-only-admin,dc=example,dc=com</dn>
+        <dn_field/>
+        <listen_interval>5</listen_interval>
+        <listener>true</listener>
+        <map/>
+        <mid_server/>
+        <name>Demo forumsys</name>
+        <paging>true</paging>
+        <password>﷞﷟﷒e5045298838c7250d83fb2dfeeaad3aa﷬﷔1﷬﷭zsIp3peoRQ53Or5Q7s_abQ==r495VvpRGAPKlwtVha1GObndpZ0Fyhjj﷮﷯</password>
+        <rdn>DC=example,DC=com</rdn>
+        <read_timeout>30</read_timeout>
+        <server_url>ldap://ldap.forumsys.com</server_url>
+        <ssl>false</ssl>
+        <sys_class_name>ldap_server_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-13 22:23:26</sys_created_on>
+        <sys_id>ee625610838c7250d83fb2dfeeaad399</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Demo forumsys</sys_name>
+        <sys_package display_value="Room Reservation" source="x_1829144_room">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_scope>
+        <sys_update_name>ldap_server_config_ee625610838c7250d83fb2dfeeaad399</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-13 22:26:21</sys_updated_on>
+        <system_id>app129028.ord191.service-now.com:dev320461001</system_id>
+        <vendor>active_directory</vendor>
+    </ldap_server_config>
+</record_update>
