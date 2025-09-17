@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1829144_room.getUserManager</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>getUserManager</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var getUserManager = Class.create();
+getUserManager.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getUserManager: function() {
+        var userSysId = this.getParameter('sysparm_sys_id');
+        var userGR = new GlideRecord('sys_user');
+        if (userGR.get(userSysId) && userGR.manager) {
+            return userGR.manager.toString(); // Retourne le sys_id du manager
+        }
+        return ''; // Pas de manager
+    },
+
+    type: 'getUserManager'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-09 16:50:02</sys_created_on>
+        <sys_id>331f584783b3ea10d83fb2dfeeaad32b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>getUserManager</sys_name>
+        <sys_package display_value="Room Reservation" source="x_1829144_room">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Room Reservation">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_scope>
+        <sys_update_name>sys_script_include_331f584783b3ea10d83fb2dfeeaad32b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-09 17:19:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="New Section" section_id="727bfb2283fb6a10d83fb2dfeeaad399" sys_domain="global" table="sys_user" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>manager</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-09-08 19:29:00</sys_created_on>
+            <sys_id>0b7b3f2283fb6a10d83fb2dfeeaad33f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="sys_user" sys_domain="global" view="Default view">727bfb2283fb6a10d83fb2dfeeaad399</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-09-08 19:29:00</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-09-08 19:29:00</sys_created_on>
+            <sys_id>8f7b3f2283fb6a10d83fb2dfeeaad33f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="sys_user" sys_domain="global" view="Default view">727bfb2283fb6a10d83fb2dfeeaad399</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-09-08 19:29:00</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>sys_user</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-09-08 19:28:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>727bfb2283fb6a10d83fb2dfeeaad399</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_user</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Room Reservation" source="x_1829144_room">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Room Reservation">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_scope>
+            <sys_update_name>sys_ui_section_727bfb2283fb6a10d83fb2dfeeaad399</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-09-08 19:28:59</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

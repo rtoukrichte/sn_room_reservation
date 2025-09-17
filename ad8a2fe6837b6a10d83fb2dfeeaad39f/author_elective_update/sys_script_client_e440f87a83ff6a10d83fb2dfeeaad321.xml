@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>requested_for</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>set manager field</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    var gr = new GlideRecord('sys_user');
+    gr.addQuery('sys_id', g_form.getValue('requested_for'));
+    gr.query(myCallBackUser);
+
+    function myCallBackUser(gr) {
+        if (gr.next()) {
+            g_form.setValue('manager', gr.manager);
+			alert(gr.manager);
+        }
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-08 23:20:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e440f87a83ff6a10d83fb2dfeeaad321</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>set manager field</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Room Reservation" source="x_1829144_room">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_scope>
+        <sys_update_name>sys_script_client_e440f87a83ff6a10d83fb2dfeeaad321</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-08 23:43:47</sys_updated_on>
+        <table>x_1829144_room_reservation</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Room Reservation">ad8a2fe6837b6a10d83fb2dfeeaad39f</application>
+        <file_path/>
+        <instance_id>e8e012cd93f86e94611eddd548373cda</instance_id>
+        <instance_name>dev320461</instance_name>
+        <name>sys_script_client_e440f87a83ff6a10d83fb2dfeeaad321</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;requested_for&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;set manager field&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    var gr = new GlideRecord('sys_user');
+    gr.addQuery('sys_id', g_form.getValue('requested_for'));
+    gr.query(myCallBackUser);
+
+    function myCallBackUser(gr) {
+        if (gr.next()) {
+            g_form.setValue('manager', gr.manager);
+			alert(gr.manager);
+        }
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-09-08 23:20:20&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e440f87a83ff6a10d83fb2dfeeaad321&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;set manager field&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Room Reservation" source="x_1829144_room"&gt;ad8a2fe6837b6a10d83fb2dfeeaad39f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Room Reservation"&gt;ad8a2fe6837b6a10d83fb2dfeeaad39f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_e440f87a83ff6a10d83fb2dfeeaad321&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-09-08 23:43:47&lt;/sys_updated_on&gt;&lt;table&gt;x_1829144_room_reservation&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>735362544</payload_hash>
+        <record_name>set manager field</record_name>
+        <reverted_from/>
+        <source>e58a2fe6837b6a10d83fb2dfeeaad3a1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-08 23:43:47</sys_created_on>
+        <sys_id>93c5b4fe83ff6a10d83fb2dfeeaad365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1992bb6da740000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-08 23:43:47</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>5bc5b4fe62ff6a1048ccdfe3ea93c764</update_guid>
+        <update_guid_history>5bc5b4fe62ff6a1048ccdfe3ea93c764:735362544,4c157cbee6ff6a1066988580b0a4f336:-2133073008,957330be40ff6a10c44df85860e129d9:344713673,b6a0b47a42ff6a10b68b06a2026286a4:1810922891,7760f47a3eff6a10e42cc6cc03a4c6e3:476324102</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-08 23:53:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>0ee2d2fa62b94b86b331310764e87af9</sys_id>
+        <sys_metadata>e440f87a83ff6a10d83fb2dfeeaad321</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>set manager field</sys_name>
+        <sys_package display_value="Room Reservation" source="x_1829144_room">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_package>
+        <sys_parent display_value="room reservation">0d1ca72e837b6a10d83fb2dfeeaad3c2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_scope>
+        <sys_scope_delete display_value="">179fa7a152fa4d90a2f45f5596951c40</sys_scope_delete>
+        <sys_update_name>sys_script_client_e440f87a83ff6a10d83fb2dfeeaad321</sys_update_name>
+        <sys_update_version display_value="sys_script_client_e440f87a83ff6a10d83fb2dfeeaad321">93c5b4fe83ff6a10d83fb2dfeeaad365</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-08 23:53:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

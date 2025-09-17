@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1829144_room_reservation</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Check if room already reserved or not</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    if (current.reservation_date && current.start_time) {
+        // Créer un objet GlideDateTime à partir de reservation_date
+
+
+		//var dtString = current.reservation_date + ' ' + current.start_time;                                
+		var gdt = new GlideDateTime();
+		//var startTime = new GlideDateTime(current.start_time);
+		//var gd2 = new GlideDateTime(current.reservation_date);
+		
+		//gdt.setTimeZone(gs.getSession().getTimeZone());
+		gdt.setValue(current.reservation_date.getValue() + ' ' + current.start_time.getValue());
+
+
+        // Ajouter l'heure depuis start_time (hh:mm:ss)
+        var parts = current.start_time.split(":");
+		//var ends = current.end_time.split(":");
+		//current.reservation_start = current.reservation_date+current.start_time;
+
+		//var userTZt = gs.getSession().getTimeZone();
+		//gdt.setTimeZone(userTZt);
+		//gdt.setDisplayValue(dtString);
+
+		var hours = parseInt(parts[0], 10);
+		var seconds = parseInt(parts[2], 10);
+		var minutes = parseInt(parts[1], 10);
+		
+		var totalMill = ((parts[0] * 60 + parts[1]) * 60 + parts[2]) * 1000;
+
+		//gdt.add(totalMill);
+
+		//gdt.setDisplayValue(current.reservation_date+ ' ' +current.start_time);
+		current.reservation_start = gdt;
+        if (parts.length == 3) {
+            //gdt.setDisplayValue(gdt.getDisplayValue().split(" ")[0] + " " + parts[0] + ":" + parts[1] + ":00");
+            //current.reservation_start = gdt;
+        }
+
+    }
+
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-09-10 00:11:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0425868f837bea10d83fb2dfeeaad3eb</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>Check if room already reserved or not</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Room Reservation" source="x_1829144_room">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Room Reservation">ad8a2fe6837b6a10d83fb2dfeeaad39f</sys_scope>
+        <sys_update_name>sys_script_0425868f837bea10d83fb2dfeeaad3eb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-09-11 23:48:10</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=0425868f837bea10d83fb2dfeeaad3eb"/>
+</record_update>
